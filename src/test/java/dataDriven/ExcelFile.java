@@ -22,10 +22,43 @@ public class ExcelFile {
 		String url = data.formatCellValue(c);
 		System.out.println(url);
 		
-		// shortcut
-		String s=wb.getSheet("Sheet1").getRow(0).getCell(1).getStringCellValue();
-		System.out.println(s);
+		
 		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//shortcut
+		//String s=wb.getSheet("Sheet1").getRow(0).getCell(1).getStringCellValue();
+	//	System.out.println(s);

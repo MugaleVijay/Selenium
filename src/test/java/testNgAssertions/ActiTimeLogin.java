@@ -24,7 +24,7 @@ public class ActiTimeLogin {
 		String loginpagetitle = driver.getTitle();
 		
 		SoftAssert softassert = new SoftAssert();
-		softassert.assertEquals(loginpagetitle,"VIjay - Login");   // softAssert
+		softassert.assertEquals(loginpagetitle,"Shweta - Login");   // softAssert
 		
 		WebElement usertb = driver.findElement(By.name("username"));
 		boolean statusOfUserTb = usertb.isDisplayed();
