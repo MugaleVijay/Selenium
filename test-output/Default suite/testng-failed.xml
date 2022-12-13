@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngpac.FailedTestCaseRerun">
+      <class name="testngpac.Instagram_Prank">
         <methods>
-          <include name="tc1"/>
-          <include name="tc4"/>
+          <include name="tearDown"/>
+          <include name="Login"/>
+          <include name="sendtext"/>
         </methods>
-      </class> <!-- testngpac.FailedTestCaseRerun -->
+      </class> <!-- testngpac.Instagram_Prank -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

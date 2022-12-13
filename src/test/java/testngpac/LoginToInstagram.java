@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -14,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class LoginToInstagram {
 
 	WebDriver driver;
-	@BeforeMethod
+	
 	public void setup()
 	{
 		WebDriverManager.chromedriver().setup();
@@ -33,9 +32,9 @@ public class LoginToInstagram {
 	@Test
 	public void loginInstagram() throws InterruptedException
 	{
-		driver.findElement(By.name("username")).sendKeys("Mugale Vijay");
-		driver.findElement(By.name("password")).sendKeys("123456");
+		driver.findElement(By.name("username")).sendKeys("vijay mugale");
+		driver.findElement(By.name("password")).sendKeys("pass123");
 		driver.findElement(By.xpath("//div[.='Log in']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 	}
 }

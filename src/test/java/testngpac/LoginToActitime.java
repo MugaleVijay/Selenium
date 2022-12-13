@@ -20,8 +20,8 @@ public class LoginToActitime {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.get("http://127.0.0.1/login.do;jsessionid=8mro7g1nof7jq");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.get("http://127.0.0.1/login.do;jsessionid=8mro7g1nof7jq");	
 	}
 	@AfterMethod
 	public void teardown()
